@@ -1,3 +1,7 @@
+# Microsoft Learn: Create multi-page Xamarin.Forms apps with stack and tab navigation
+
+[//]: # (TODO: Link back to Microsoft Learn module.)
+This project contains the source code for the **Create multi-page Xamarin.Forms apps with stack and tab navigation** Microsoft Learn module.
 
 # Contributing
 
