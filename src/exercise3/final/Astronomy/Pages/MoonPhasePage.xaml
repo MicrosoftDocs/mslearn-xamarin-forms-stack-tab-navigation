@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Astronomy.Pages.MoonPhasePage"
+             BackgroundColor="Black"
+             Title="Moon Phase">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="textColor">White</Color>
+            <Color x:Key="boxColor">#44FFFFFF</Color>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource textColor}" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid RowSpacing="10" ColumnSpacing="5" Padding="5" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Image Source="starfield.png" Aspect="AspectFill" Grid.RowSpan="4" Grid.ColumnSpan="4" />
+
+        <StackLayout Grid.ColumnSpan="4">
+            <Label x:Name="lblDate" FontAttributes="Bold" />
+            <Label x:Name="lblMoonPhaseIcon" FontSize="96" />
+            <Label x:Name="lblMoonPhaseText" FontAttributes="Bold" />
+        </StackLayout>
+
+        <BoxView Color="{StaticResource boxColor}" Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" />
+        <BoxView Color="{StaticResource boxColor}" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" />
+        <BoxView Color="{StaticResource boxColor}" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2" />
+        <BoxView Color="{StaticResource boxColor}" Grid.Column="3" Grid.Row="1" Grid.RowSpan="2" />
+
+        <Label x:Name="lblPhaseIcon1" Grid.Column="0" Grid.Row="1" FontSize="Large" />
+        <Label x:Name="lblPhaseIcon2" Grid.Column="1" Grid.Row="1" FontSize="Large" />
+        <Label x:Name="lblPhaseIcon3" Grid.Column="2" Grid.Row="1" FontSize="Large" />
+        <Label x:Name="lblPhaseIcon4" Grid.Column="3" Grid.Row="1" FontSize="Large" />
+
+        <Label x:Name="lblPhaseText1" Grid.Column="0" Grid.Row="2" />
+        <Label x:Name="lblPhaseText2" Grid.Column="1" Grid.Row="2" />
+        <Label x:Name="lblPhaseText3" Grid.Column="2" Grid.Row="2" />
+        <Label x:Name="lblPhaseText4" Grid.Column="3" Grid.Row="2" />
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Astronomy.PersonalizePage">
+
+    <StackLayout Padding="10">
+        <Label Text="What is your name?" />
+        <Entry x:Name="entryName" />
+
+        <Label Text="Choose an icon:" />
+
+        <Picker x:Name="pickerIcon">
+            <Picker.Items>
+                <x:String>👩‍🚀</x:String>
+                <x:String>👨‍🚀</x:String>
+                <x:String>👾</x:String>
+                <x:String>☄️</x:String>
+                <x:String>🌌</x:String>
+                <x:String>🛰️</x:String>
+                <x:String>🚀</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Button x:Name="btnSave" Text="Save" />
+        <Button x:Name="btnCancel" Text="Cancel" />
+
+    </StackLayout>
+
+</ContentPage>

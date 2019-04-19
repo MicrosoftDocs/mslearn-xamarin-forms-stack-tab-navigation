@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Astronomy"
+             x:Class="Astronomy.MainPage"
+             Title="Contoso Astronomy"
+             BackgroundImage="starfield.png">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="Gray" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="10" Spacing="5">
+        <Label Text="Explore your solar system!" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold" />
+        <Label Text="🌎 🌕 ☀️" FontSize="Large" HorizontalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>
