@@ -10,12 +10,7 @@ namespace Astronomy
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Astronomy.MainPage());
-        }
-
-        protected override void OnStart()
-        {
-            // Handle when your app starts
+            MainPage = new Astronomy.MainPage();
         }
 
         protected override void OnSleep()

@@ -137,4 +137,31 @@
   <ItemGroup>
     <BundleResource Include="Resources\starfield.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\moon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\moon%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\moon%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\question%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\question%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sun%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\sun%403x.png" />
+  </ItemGroup>
 </Project>

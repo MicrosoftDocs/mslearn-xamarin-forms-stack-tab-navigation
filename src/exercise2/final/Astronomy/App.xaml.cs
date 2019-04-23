@@ -10,17 +10,7 @@ namespace Astronomy
         {
             InitializeComponent();
 
-            var navPage = new NavigationPage(new Astronomy.MainPage());
-
-            navPage.BarBackgroundColor = Color.Black;
-            navPage.BarTextColor = Color.White;
-
-            MainPage = navPage;
-        }
-
-        protected override void OnStart()
-        {
-            // Handle when your app starts
+            MainPage = new Astronomy.MainPage();
         }
 
         protected override void OnSleep()
